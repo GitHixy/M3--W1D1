@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const twitterLink = document.querySelector(
     ".blog-sidebar .p-4:last-child li:nth-child(2)"
   );
-  twitterLink.innerHTML = "";
+  twitterLink.remove()
 });
 
 //Extra2
 
-document.addEventListener("DOMContentLoaded", function () {
+
   function removeParentElement(event) {
     event.preventDefault();
     let parentElement = event.currentTarget.closest(".col-md-6");
@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
   links.forEach(function (link) {
     link.addEventListener("click", removeParentElement);
   });
-});
+
 
 //Extra3
 
-document.addEventListener("DOMContentLoaded", function () {
+
   function showAlertOnHover(event) {
     let authorName = event.target.textContent;
 
@@ -48,4 +48,4 @@ document.addEventListener("DOMContentLoaded", function () {
   authorLinks.forEach(function (link) {
     link.addEventListener("mouseover", showAlertOnHover);
   });
-});
+
