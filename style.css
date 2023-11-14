@@ -1,0 +1,117 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+/*
+ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron [DONE]
+
+ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar [DONE]
+
+ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron [DONE]
+
+ESERCIZIO 4) Crea un selettore per selezionare il primo blog post [DONE]
+
+ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso [DONE]
+
+ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar [DONE]
+
+ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") [DONE]
+
+ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post [DONE]
+
+ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post [DONE]
+
+ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra [DONE]
+
+ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso [DONE]
+
+ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer [DONE]
+*/
+
+/*ES.1*/
+.jumbotron h1 {
+  color: red;
+}
+
+/*Es.2*/
+
+.nav > * {
+  color: blue;
+}
+
+/*Es.3*/
+
+.jumbotron a {
+  color: green;
+}
+
+/*Es.4*/
+
+.blog-post:first-of-type {
+  background-color: aqua;
+}
+
+/*Es.5*/
+
+.blog-post hr {
+  background-color: red;
+  height: 10px;
+}
+
+/*Es.6*/
+
+.nav span:nth-child(even) {
+  color: red;
+}
+
+/*Es.7*/
+
+.blog-sidebar .mb-0 {
+  text-align: center;
+}
+
+/*Es.8*/
+
+.blog-post:nth-of-type(2) .blog-post-meta a {
+  color: brown;
+  text-decoration: underline;
+  background-color: bisque;
+}
+
+/*Es.9*/
+
+.blog-post:nth-of-type(3) li:nth-child(2) {
+  background-color: aquamarine;
+}
+
+/*Es.10*/
+
+a.float-right {
+  background-color: cadetblue;
+}
+
+/*Es.11*/
+
+.blog-pagination .btn-outline-secondary[aria-disabled="true"] {
+  background-color: red;
+}
+
+/*Es.12*/
+
+.blog-footer a:nth-child(2) {
+  background-color: red;
+}
+
+.blog-sidebar .p-4:last-child li:nth-child(2) {
+  background-color: red;
+}
